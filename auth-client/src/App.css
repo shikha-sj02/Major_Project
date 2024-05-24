@@ -1,0 +1,76 @@
+body{
+  font-family: 'Sofia sans',sans-serif;
+  background: linear-gradient(180deg,
+  rgba(243,240,232,0.7)
+0%,
+
+rgba(243,240,232,0)
+
+
+  100%
+  );
+  background-size: cover;
+}
+
+
+.image {
+  width: 100%;
+  animation: shoe-animation 3s infinite;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.image img {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: auto;
+  transform: rotate(0deg);
+}
+
+@keyframes shoe-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+/* blob */
+.blob{
+  background-image: url(./assets/chef2.png);
+  width: 380px;
+  height: 380px;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(253, 89, 13, 0.609);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+.blob1{
+  background-image: url(./assets/chef.png);
+  width: 380px;
+  height: 380px;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(253, 217, 13, 0.396);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0%, 100%{
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
